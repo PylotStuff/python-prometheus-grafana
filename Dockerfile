@@ -5,6 +5,7 @@ WORKDIR /app
 RUN apt update
 
 RUN pip3 install --upgrade pip
+RUN pip install requests
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
